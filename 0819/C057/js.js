@@ -9,7 +9,7 @@ lines = [
 
 const getWindArrayArray = n => lines.slice(1, n + 1).map(str => str.split(" ").map(Number));
 
-const calcDistance = (arrays, x, y) => {
+const getMaxX = (arrays, x, y) => {
     let currentX = x;
     let currentY = y;
     let maxX = x;
@@ -31,4 +31,6 @@ const calcDistance = (arrays, x, y) => {
 
 const [time, firstX, firstY] = lines[0].split(" ").map(Number);
 
-console.log(calcDistance(getWindArrayArray(time), firstX, firstY));
+
+console.log(getWindArrayArray(time));
+// console.log(calcDistance(getWindArrayArray(time), firstX, firstY));
