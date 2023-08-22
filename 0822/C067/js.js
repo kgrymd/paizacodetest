@@ -26,3 +26,6 @@ const positionsFromRight = lines.slice(1).map(Number);
 
 // 指定されたビット位置の値を取得し、結果を改行で区切って出力
 console.log(getNthBitFromRight(toBinary(X), positionsFromRight).join('\n'));
+
+
+
