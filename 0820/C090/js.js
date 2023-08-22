@@ -10,6 +10,9 @@ const getDistanceObj = () => {
     return obj;
 }
 
+
+
+
 // 入力された電話番号の文字列から - を除き一文字ずつ要素にした配列を作成し返す関数
 const getPhoneNumberArray = (str) => str.replace(/-/g, '').split('').map(Number);
 
@@ -20,4 +23,7 @@ const getTotalDistance = (array, distanceObj) => array.reduce((acc, num) => acc 
 
 
 // ーーーーーーーーーーー↓出力↓ーーーーーーーーーーーー
+
+console.log(`こいつだ...
+1.2.3`, getPhoneNumberArray(lines[0]))
 console.log(getTotalDistance(getPhoneNumberArray(lines[0]), getDistanceObj()));

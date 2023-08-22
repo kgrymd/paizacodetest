@@ -12,6 +12,6 @@ const calcDrawing = (height, width, dy, dx) => (width * dy) + (height * dx) - (d
 
 const [[height, width], [dy, dx]] = lines.map(str => str.split(" ").map(Number));
 
-
+console.log('中身', lines.map(str => str.split(" ").map(Number)))
 
 console.log((width * dy) + (height * dx) - (dx * dy));
