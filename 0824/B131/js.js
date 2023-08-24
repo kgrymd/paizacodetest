@@ -43,7 +43,7 @@ lines = [
 const getFareObj = (array, N) => {
 
     obj = {};
-    array.slice(1, N + 1).map((str, i) => obj[`${i + 1}`] = str.split(" ").map(Number));
+    array.slice(1, N + 1).forEach((str, i) => obj[`${i + 1}`] = str.split(" ").map(Number));
     return obj
 
 }

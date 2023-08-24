@@ -49,7 +49,7 @@ const X = lines[N + 1];
 const getFareObj = (array, N) => {
 
     obj = {};
-    array.slice(1, N + 1).map((str, i) => obj[`${i + 1}`] = str.split(" ").map(Number));
+    array.slice(1, N + 1).forEach((str, i) => obj[`${i + 1}`] = str.split(" ").map(Number));
     return obj
 }
 console.log('各路線の駅1から各駅までの料金', getFareObj(lines, N));
@@ -75,7 +75,7 @@ const getTotalFare = (arrays, obj) => {
         console.log('現在の駅(移動後)', currStation)
 
 
-        console.log("forEach内のsum", sum);
+        console.log("sum", sum);
     });
 
     return sum;
