@@ -30,6 +30,7 @@ const getResult = (array) => array.reduce((acc, curr) => acc + curr, 0)
 
 // ーーーーーー↓出力↓ーーーーーー
 
+
 // console.log('createCipherArray()', createCipherArray(lines[0]));
 
 // console.log("convertCipherToNumbers()", convertCipherToNumbers(createCipherArray(lines[0])));
