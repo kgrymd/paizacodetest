@@ -5,12 +5,20 @@ const lines = [
     '14 19',
 ]
 
+
+
 // const lines = [
 //     '2',
 //     '16 19',
 //     '14 17',
 // ]
 
+// ーーーーーー↓出力↓ーーーーーー
+const N = parseInt(lines[0]);
+
+const dayOffArray = lines.slice(1).map(str => str.split(' ').map(Number));
+
+console.log(isCommonDate(...dayOffArray) ? 'OK' : 'NG');
 
 //[14, 19] を [14,15,16,17,18,19]にする関数
 const createArray = (start, end) => {
@@ -28,11 +36,5 @@ const isCommonDate = (...arrays) => {
 }
 
 
-// ーーーーーー↓出力↓ーーーーーー
-const N = parseInt(lines[0]);
-
-const dayOffArray = lines.slice(1).map(str => str.split(' ').map(Number));
-
-console.log(isCommonDate(...dayOffArray) ? 'OK' : 'NG');
 
 
