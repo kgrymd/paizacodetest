@@ -6,11 +6,6 @@ const lines = [
     '4 4 4',
 ]
 
-const [n, r] = lines[0].split(' ').map(Number);
-
-const boxSizes = lines.slice(1).map(str => str.split(' ').map(Number));
-
-// console.log(arrys);
 
 const getResultArray = (arrays, r) => {
     newArray = [];
@@ -23,4 +18,9 @@ const getResultArray = (arrays, r) => {
     return newArray;
 };
 
-console.log([...getResultArray(boxSizes, r)].join('\n'));
+
+const [n, r] = lines[0].split(' ').map(Number);
+
+const boxSizes = lines.slice(1).map(str => str.split(' ').map(Number));
+
+console.log(getResultArray(boxSizes, r).join('\n'));
