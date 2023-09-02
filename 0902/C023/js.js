@@ -20,10 +20,10 @@ const boughtTickets = lines.slice(2).map(str => str.split(' ').map(Number));
 for (let i = 0; i < N; i++) {
     const ticket = boughtTickets[i];
     let matchCount = 0;
-    for (const num of ticket) {
+    ticket.forEach(num => {
         if (winNums.includes(num)) {
             matchCount++;
         }
-    }
+    })
     console.log(matchCount);
 }
